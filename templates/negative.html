@@ -271,7 +271,9 @@
       color: #007aff;
         box-shadow: 0px 0px 5px -2px grey;
     }
-
+#go_back:hover{
+    cursor: pointer;
+}
 </style>
 </head>
 <body>
@@ -296,7 +298,7 @@
                         <p>Did you mean?</p>
                         <span id="suggestions"></span>
                     </div>
-                    <a class="button" onClick="goBack()"><i class="fas fa-home"></i> Go Back to Home Page &amp; Try Again.</a>
+                    <a class="button" onClick="goBack()" id="go_back"><i class="fas fa-home"></i> Go Back to Home Page &amp; Try Again.</a>
                 </div>
             </div>
 </body>
