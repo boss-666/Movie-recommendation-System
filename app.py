@@ -1,10 +1,12 @@
-import flask
+import flask 
+from flask import  url_for
 import difflib
 import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-app = flask.Flask(__name__, template_folder='templates')
+app = flask.Flask(__name__, template_folder='templates',static_url_path='',
+                            static_folder='static')
 
 df2 = pd.read_csv('./model/tmdb.csv')
 
@@ -53,6 +55,11 @@ def main():
                 dates.append(result_final.iloc[i][1])
 
             return flask.render_template('positive.html',movie_names=names,movie_date=dates,search_name=m_name)
-
+@app.route('/about')
+def about():
+    return flask.render_template('about.html')
+@app.route('/home')
+def home():
+    return flask.render_template('home.html')
 if __name__ == '__main__':
     app.run()
