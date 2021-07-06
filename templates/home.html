@@ -639,9 +639,9 @@ background-color: #e2e2deda;
         <div class="ty">THANKS FOR RATING</div>
       </div>
     </div>
-<button class="button" onClick="goBack()"><span> Recommend-> </span></button>
+<a href= "https://my-movie-recommend.herokuapp.com"><button class="button"><span> Recommend-> </span></button></a>
     </body>
-<script>
+    <script>
         	var heart = document.getElementsByClassName('icon-heart');
 var star= document.getElementsByClassName("star");
 var use = document.getElementsByClassName('uses');
@@ -683,7 +683,7 @@ var rate = new Array("8.7","6.8","8.7","7.9","8.5","7.8","7.9","NONE");
 var favoriteA = new Array("#d46060","#d46060","#d46060","#d46060","#d46060","#d46060","#d46060","#d46060");
 var trailerMovie = new Array("https://www.youtube.com/embed/ej3ioOneTy8","https://www.youtube.com/embed/AwwbhhjQ9Xk","https://www.youtube.com/embed/zSWdZVtXT7E","https://www.youtube.com/embed/4W6byFcD5uE","https://www.youtube.com/embed/seMwpP0yeu4","https://www.youtube.com/embed/kl8F-8tR8to","https://www.youtube.com/embed/vw61gCe2oqI","https://www.youtube.com/embed/LTDaET-JweU");
 var video = new Array("8.7","6.8","8.7","7.9","8.5","7.8","7.9","NONE");
-var filmsBG = new Array("http://t2conline.com/wp-content/uploads/2015/08/5851.jpg","http://mazerunnerguide.com/wp-content/uploads/2014/08/The-Maze-Runner.jpg","https://www.wired.com/wp-content/uploads/2014/10/ut_interstellar2_f.png","http://cdn1-www.comingsoon.net/assets/uploads/2015/06/TheWalkBanner.jpg","http://moviecitynews.com/wp-content/uploads/2015/06/inside-out-651.jpg","http://kulturbloggen.com/wp-content/uploads/2015/01/Kingsman6.jpg","http://www.blackvibes.com/images/blogs/12-2013/27613-tom-cruise-stars-summ.jpg","http://kulturbloggen.com/wp-content/uploads/2015/07/spectre.jpg");
+var filmsBG = new Array("https://urbangeekz.com/wp-content/uploads/2015/09/TheMartian_RatedPoster_CMYK.jpg","http://i1.wp.com/www.heyuguys.com/images/2015/07/Maz-Runner-Scorch-Trials-Character-Poster-6.jpg","https://www.wired.com/wp-content/uploads/2014/10/ut_interstellar2_f.png","http://cdn1-www.comingsoon.net/assets/uploads/2015/06/TheWalkBanner.jpg","http://moviecitynews.com/wp-content/uploads/2015/06/inside-out-651.jpg","http://kulturbloggen.com/wp-content/uploads/2015/01/Kingsman6.jpg","http://www.blackvibes.com/images/blogs/12-2013/27613-tom-cruise-stars-summ.jpg","http://kulturbloggen.com/wp-content/uploads/2015/07/spectre.jpg");
 var filmsA = -1;
 var up = -100;
 var down = 100;
@@ -860,10 +860,5 @@ var rateing = function() {
 for(var i=0;i<star.length;i++){
     star[i].addEventListener('click', rateing, false);
 }
-function goBack() {
-  window.history.back();
-}
-</script>
-
-</body>
+    </script>
 </html>

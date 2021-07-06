@@ -61,5 +61,8 @@ def about():
 @app.route('/home')
 def home():
     return flask.render_template('home.html')
+@app.route('/round')
+def round():
+    return flask.render_template('index.html')    
 if __name__ == '__main__':
     app.run()
